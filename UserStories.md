@@ -43,3 +43,5 @@ As a player
 So that I get the maximal bonus
 On the 10th and final frame I should be able to score three strikes
 ```
+
+***
