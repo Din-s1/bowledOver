@@ -1,5 +1,3 @@
-'use strict';
-
 describe('Bowling', function() {
   
   let bowling;
@@ -21,8 +19,24 @@ describe('Bowling', function() {
   });
 
   describe('nextFrame', function() {
-    it('increments frame', function() {
+    it('Increments frame', function() {
       bowling.nextFrame();
+      expect(bowling.getFrame()).toEqual(2);
+    });
+    it('Resets the pins to 10', function() {
+      bowling.nextFrame();
+      expect(bowling.pinsSet).toEqual(10);
+    });
+  });
+
+  describe('isFrameComplete', function() {
+    it('Moves to next frame if rolled twice', function() {
+      bowling.roll(2), bowling.roll(0);
+      expect(bowling.getFrame()).toEqual(2);
+    });
+
+    it('Moves to next frame when strike rolled', function() {
+      bowling.roll(10);
       expect(bowling.getFrame()).toEqual(2);
     });
   });
