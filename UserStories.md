@@ -21,7 +21,7 @@ I would like save my scores per frame
 ```
 As a player
 So that I can keep track of my score
-I would like to be a le to see my score
+I would like to be able to see my score
 ```
 ```
 As a player
