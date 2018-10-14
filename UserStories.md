@@ -16,7 +16,7 @@ I would like to input a score only between 0 and 10
 ```
 As a player
 so that I may tally my score
-I would like save my scores per frame
+I would like to save my rolls' scores per frame
 ```
 ```
 As a player
